@@ -42,7 +42,7 @@ bool LinkedList<T>::search(T value) const
 	
 	while(temp!=nullptr)
 	{
-		if(temp.getValue()==value)
+		if(temp->getValue()==value)
 		{
 			isFound=true;
 		}
@@ -121,7 +121,7 @@ bool LinkedList<T>::removeBack()
 		lastNode=secondToLast->getNext();
 
 		//iterate to last 2 nodes
-		while(lastNode.getNext()!=nullptr)
+		while(lastNode->getNext()!=nullptr)
 		{
 			secondToLast=secondToLast->getNext();
 			lastNode=lastNode->getNext();

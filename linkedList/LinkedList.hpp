@@ -128,7 +128,7 @@ bool LinkedList<T>::removeBack()
 		}
 
 		delete(lastNode);
-		secondToNext.setNext(nullptr);
+		secondToLast.setNext(nullptr);
 		isRemoved=true;
 		m_size--;
 	}
